@@ -11,9 +11,7 @@ export function activate(context: ExtensionContext) {
 //     window.showInformationMessage('привет!');
 //   });
 
-
-
-  context.subscriptions.push(
+context.subscriptions.push(
 	commands.registerCommand('extension.helloWorld', snippet_generate)
   );
 }
