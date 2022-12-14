@@ -18,21 +18,21 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
+				"command": "extension.snippet_generate",
 				"title": "Hello World"
 			}
 		],
 		"menus": {
 			"editor/context": [
 				{
-					"command": "extension.helloWorld",
+					"command": "extension.snippet_generate",
 					"when": "editorHasSelection"
 				}
 			]
 		},
 		"keybindings": [
 			{
-				"command": "extension.helloWorld",
+				"command": "extension.snippet_generate",
 				"key": "alt+ctrl+shift+b"
 			}
 		]

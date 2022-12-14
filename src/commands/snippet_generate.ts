@@ -14,27 +14,10 @@ export function snippet_generate() {
 
     editor.edit(async(builder) => {
       builder.insert(new Position(newline, 0), textChanger(codeBlock));
-      // const mselect = new Selection(new Position(newline+2, 0), new Position(newline+5,20));
-      // editor.selection(mselect);
-      const targetDirectory = await promptForTargetDirectory();
       console.log(codeBlock);
     });
   }
 }
-
-async function promptForTargetDirectory(): Promise<string | undefined> {
-  const options: OpenDialogOptions = {
-    canSelectMany: false,
-    openLabel: "Select a folder to create the bloc in",
-    canSelectFolders: true,
-  };
-
-  return window.showOpenDialog(options).then((uri) => {
-    if (_.isNil(uri) || _.isEmpty(uri)) {
-      return undefined;
-    }
-    return uri[0].fsPath;
-  });}
 
 function textChanger(codeText: string): string {
   let changedText = '';

@@ -12,6 +12,6 @@ export function activate(context: ExtensionContext) {
 //   });
 
 context.subscriptions.push(
-	commands.registerCommand('extension.helloWorld', snippet_generate)
+	commands.registerCommand('extension.snippet_generate', snippet_generate)
   );
 }
