@@ -5,8 +5,6 @@ import {snippet_generate} from "./commands/snippet_generate";
 
 export function activate(context: ExtensionContext) {
 
-
-
 //   const disposable = commands.registerCommand('extension.helloWorld', () => {
 //     window.showInformationMessage('привет!');
 //   });
