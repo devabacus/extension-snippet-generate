@@ -20,12 +20,21 @@
 			{
 				"command": "extension.snippet_generate",
 				"title": "snippet_generate"
+			},
+			{
+				"command": "extension.removeUnusedImports",
+				"title": "remove_unused_imports"
 			}
+
 		],
 		"menus": {
 			"editor/context": [
 				{
 					"command": "extension.snippet_generate",
+					"when": "editorHasSelection"
+				}, 
+				{
+					"command": "extension.removeUnusedImports",
 					"when": "editorHasSelection"
 				}
 			]
@@ -34,6 +43,10 @@
 			{
 				"command": "extension.snippet_generate",
 				"key": "alt+ctrl+shift+b"
+			}, 
+			{
+				"command": "extension.removeUnusedImports",
+				"key": "alt+ctrl+shift+i"
 			}
 		]
 	},
@@ -53,6 +66,7 @@
 	},
 	"dependencies": {
 		"@types/lodash": "^4.14.191",
-		"@types/mkdirp": "^1.0.2"
+		"@types/mkdirp": "^1.0.2",
+		"ts-morph": "^19.0.0"
 	}
 }
