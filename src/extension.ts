@@ -6,8 +6,6 @@ import { removeUnusedImports } from "./commands/unused_import_remove";
 
 export function activate(context: ExtensionContext) {
 
-
-
 //   const disposable = commands.registerCommand('extension.helloWorld', () => {
 //     window.showInformationMessage('привет!');
 //   });
