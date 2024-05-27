@@ -39,7 +39,7 @@ function textChanger(codeText: string): string {
 function addTabs(codeRow: string): string {
   let codeRowChanged = '';
   // replace spaces with \t as spaces ignore in snipptets.json
-  if (codeRow.startsWith('  ')) codeRowChanged = '\\tivan' + codeRow.trim();
+  if (codeRow.startsWith('  ')) codeRowChanged = '\\t' + codeRow.trim();
   else if (codeRow.startsWith('    ')) codeRowChanged = '\\t\\t' + codeRow.trim();
   else codeRowChanged = codeRow.trim();
   return codeRowChanged;
